@@ -1,0 +1,6 @@
+[submodule "fastcolorpicker"]
+	path = fastcolorpicker
+	url = git@github.com:wzdxy/jQuery.fastColorPicker.git
+[submodule "alertpopbox"]
+	path = alertpopbox
+	url = git@github.com:wzdxy/jQuery.AlartPopbox.git
