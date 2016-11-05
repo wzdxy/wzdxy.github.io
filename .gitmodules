@@ -4,3 +4,6 @@
 [submodule "alertpopbox"]
 	path = alertpopbox
 	url = https://github.com/wzdxy/jQuery.AlartPopbox.git
+[submodule "lednumeric"]
+	path = lednumeric
+	url = https://github.com/wzdxy/LED-numeric-display.git
