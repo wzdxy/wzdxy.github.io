@@ -1,0 +1,202 @@
+*{margin: 0;padding: 0;}
+html,body{width: 1280px;margin: 0 auto;}
+input,textarea{outline: none;}
+@logoColor:#393a3a;
+.border1{border-top: 1px solid transparent;}
+header{
+  height: 56px;
+  //background-color: #ccc;
+}
+header .logo {
+  background: url(../images/t7_logo.png) no-repeat;
+  color: @logoColor;
+  line-height: 56px;
+  font-size: 21px;
+  padding-left: 42px;
+  margin-left: 60px;
+  text-decoration: none;
+}
+header .login{
+  color: @activeColor;
+  background: url(../images/t7_login.png) no-repeat;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  margin: 16px 67px 24px 24px;
+  padding-left: 20px;
+  float: right;
+
+}
+
+@activeColor:#e74f4d;
+@normalColor:#787b83;
+#nav {float: right;}
+#nav li{float: left;margin: 0 8px;list-style:none;}
+#nav a{font-size: 14px;text-decoration: none;color: @normalColor;height: 48px;display: inline-block;line-height: 48px;padding: 0 16px 5px 16px;}
+#nav .active{border-bottom: 3px solid @activeColor;color: @activeColor;}
+#nav a:hover {
+  #nav .active;
+}
+
+@bannerColor:#fff;
+
+.banner{width: 1280px;height: 690px;background: url(../images/t7_banner.jpg) no-repeat;.border1;}
+.banner h3,.banner p,.banner a{
+  color:@bannerColor;
+  font-family: '微软雅黑';
+}
+.banner h3{
+  font-size: 60px;
+  line-height: 65px;
+  margin: 230px 0 9px 118px;
+  font-weight: normal;
+}
+.banner p{
+  font-size: 21px;
+  line-height: 32px;
+  margin: 0 0 62px 120px;
+}
+.banner a{
+  font-size:30px; 
+  display: block;
+  height: 63px;
+  width: 330px;
+  line-height: 63px;
+  text-align: center;
+  background-color: @activeColor;
+  margin-left: 120px;
+  text-decoration: none;
+}
+
+@advan_h:249px;
+@advan_c:#767777;
+.advan {height: @advan_h;width: 1280px;display: flex;justify-content:space-between;}
+.advan div{height: @advan_h;width: 319px;text-align: center;}
+.advan img{height: 40px;width: 41px;margin: 46px 139px 46px 139px;}
+.advan p{font-size: 14px;color: @advan_c;line-height: 18px;border-left: 2px solid;}
+.advan .section1 p{border: none;}
+
+@askH:#323333;
+@askBg:#edecec;
+
+.ask{height: 360px;width: 1280px;background: @askBg;text-align: center;}
+.ask h1{font: 54px;color: @askH;opacity: 0.5;}
+.ask img{width: 90px;height: 90px;padding: 90px 0 50px 0;}           //为什么margin 0 auto无效？
+
+@selectColor:#fff;
+@selecth:340px;
+@selectw:1280px;
+@boxh:35px;
+@boxw:233px;
+@ulColor:#a8aaaa;
+@selectBg:#be4e48;
+@seclih:26px;
+.select {color: @selectColor;text-align: center;height: @selecth;width: @selectw;background-image: url(../images/t7_map.jpg);.border1;}
+.select .opc{background-color: #f00;opacity: 0.1;width: @selectw;width: 1280px;height: 340px;z-index: 2;position: absolute;}
+.select h2,.select .blank,.select p,.select ul,.select a{position: relative;z-index: 33;}
+.select h2{font-size: 21px;margin: 53px 0 10px 0;}
+.select .blank{border-top: 2px solid @selectColor;width: 30px;height: 20px;display: inline-block;}
+.select p{font-size: 12px;margin-bottom: 52px;}
+
+.select .firul{float: left;list-style-type: none;height: @boxh+1;padding-left: 126px;}
+.select .firli{height: @boxh;width: @boxw+2;float: left;background-color: #fff;margin-right: 28px;text-align: left;text-indent: 10px;}
+.select .firli a{background: url(../images/t7_arrow.png ) no-repeat 200px 9px;}
+.select .firli:hover .secul{display: block;}
+
+.select .secul{display: none; width: @boxw;list-style-type: none;font-size: 14px;border: 1px solid @selectBg;padding-top: @boxh;position: relative;top: -@boxh;}
+.select .secli{background-color: #eee;height: @seclih;width: @boxw;color: @ulColor;cursor: pointer;}
+.select .secli:hover{background-color: @selectBg;color: #fff;}
+.select .secli:hover div{background: url(../images/t7_mark.png) no-repeat 8px 8px;}
+.secli div{height: @seclih;width: @boxw;line-height: @seclih;text-indent: 32px;}
+.select a{display: inline-block;width: @boxw+(-10);height: @boxh;font-size: 14px;text-decoration: none;line-height: @boxh;color: @ulColor;}
+.select .btn{background-color: @selectBg;color: #fff;font-size: 14px;}
+
+@picsBg:#f7f7f7;
+@picstitle:#575858;
+@picsp:#9f9f9f;
+.pics{display: flex;justify-content:center;flex-direction:row;height: 604px;background-color: @picsBg;}
+.pics div{height: 390px;margin: 36px;align-self: center;text-align: center;}
+.pics img{border: 1px solid #ccc;padding: 10px;background-color: #fff;}
+.pics h3{font-size: 15px;color: @picstitle;margin-top: 12px;margin-bottom: 12px;}
+.pics p{font-size: 12px;color:@picsp;margin-bottom: 8px;}
+
+@airtColor:#aaaaaa;
+
+.world{height: 565px;width: 1280px;}
+.left{background-image: url(../images/t7_world.jpg);float: left;height: 565px;width: 850px;text-align: center;color: #fff;.border1;}
+.left h3{font-size: 50px;margin-top: 130px;line-height: 50px;}
+.left h1{font-size: 160px;line-height: 160px;position: relative;top: -10px;}
+.left p{font-size: 22px;line-height: 38px;}
+
+.right{float: right;width: 430px;height: 565px;}
+.right ul{list-style: none;width: 300px;margin: 0 auto;}
+.right li{position: absolute;text-align: center;width: 300px;}
+.right h3{font-size: 16px;margin-top: 165px;margin-bottom: 24px;}
+.right h3 span{color: @activeColor;}
+.right p{font-size: 12px;color: #ccc;line-height: 30px;margin-bottom: 45px;}
+.right article a{font-size: 12px;color: @activeColor;padding: 8px 28px;border: 1px solid @activeColor;text-decoration: none;}
+
+.our{height: 520px;width: 1280px;background-color: #fff;.border1;}
+.our p{font-size: 21px;margin-top: 170px;line-height: 30px;}
+.our a{padding: 12px 42px;border: 1px solid;}
+.our .aline{width: 30px;height: 25px;border-top: 2px solid;margin: 20px 198px 0 198px;}
+.red,.white{width: 425px;height: 520px;float: left;text-align: center;}
+.red{background-color: @activeColor;color: #fff;}
+.red a{color: #fff;text-decoration: none;}
+.white{color:#555;}
+.white a{color: @activeColor;text-decoration: none;}
+
+.ourpic{width: 430px;height: 520px;float: left;background-image: url(../images/t7_our_pic.jpg);position: relative;}
+.ourpic .over{width: 430px;height: 520px;background: #000;opacity: 0.3;filter: alpha(opacity=30);}
+.ourpic .triga{position: absolute;top: 250px;z-index: 2;}
+
+.join{height: 750px;width: 1280px;}
+.lets{height: 290px;width: 1290px;text-align: center;.border1;}
+.lets h3{color:#555;font-size: 21px;font-weight: normal;margin-top: 120px;}
+.lets div{height: 12px;width: 30px;border-top: 2px solid @activeColor;margin-top: 8px;display: inline-block;}
+.lets p{font-size: 12px;color: #aaa;}
+
+@agreeColor:#64666f;
+.agree{height: 460px;width: 290px;margin-left: 136px;color: @agreeColor;float: left;}
+.agree h3{font-size: 14px;line-height: 46px;}
+.agree p{font-size: 12px;line-height: 22px;}
+.agree a{text-decoration: none;color: @agreeColor;text-align: right;font-size: 10px;background: url(../images/t7_morebg.png) no-repeat 2px 4px ;text-indent: 18px;display: inline-block;margin-left: 245px;margin-bottom: 24px;}
+.agree .lasta{margin-bottom: 0;}
+
+@formBg:#ececee;
+.form{width: 680px;float: right;font-size: 14px;color: @agreeColor;}
+.form input,.form textarea{border: none;background-color: @formBg;line-height: 24px;}
+.form input{width: 200px;text-indent: 8px;height: 24px;}
+.form div{background-color: @formBg;display: inline-block;width: 310px;margin: 7px 8px;height: 40px;}
+.form .areadiv{position: relative;}
+.areadiv span{position: absolute;}
+.form span{line-height: 40px;margin-left: 18px;margin-top: 2px;}
+.form textarea{width: 616px;text-indent: 144px;padding: 12px;line-height: 22px;height: 120px;}
+.form .subbtn{width: 640px;height: 40px;margin: 14px 8px;font-size: 16px;font-weight: bold;}
+.form .subbtn:hover{background-color: #ccc;cursor: pointer;}
+
+@contactBg:#32363e;
+@contactBtn:#6f7278;
+.contact{height: 357px;width: 1280px;color: #fff;background-color: @contactBg;display: flex;align-items: center;flex-direction: column;padding-top: 82px;.border1;}
+.contact h3{font-size: 20px;line-height: 36px;}
+.contact p{font-size: 14px;line-height: 18px;}
+.contact form{width: 510px;height: 40px;margin: 30px 0;}
+.contact form .email{height: 40px;width: 430px;border: none;text-indent: 8px;}
+.contact form .contactbtn{height: 40px;width: 80px;border: none;background-color: @contactBtn;color: #fff;}
+.contact form .contactbtn:hover{cursor: pointer;}
+
+.foura a{width: 30px;height: 30px;display: inline-block;margin: 36px 12px;}
+.foura .a1{background-image: url(../images/t7_qq.png);}
+.foura .a2{background-image: url(../images/t7_weibo.png);}
+.foura .a3{background-image: url(../images/t7_twitter.png);}
+.foura .a4{background-image: url(../images/t7_earth.png);}
+
+.flex(@flex-direction,@justify-content){
+  flex-direction: @flex-direction;
+  display: flex;align-items: center;justify-content: @justify-content;
+}
+
+@footerBg:#2f2f38;
+footer{height: 56px;width: 1280px;.flex(row,space-between);background-color: @footerBg;}
+footer span{font-size: 12px;line-height: 56px;margin: 0 70px;color: #fff;}
+footer span  a{text-decoration: none;color: #fff;}

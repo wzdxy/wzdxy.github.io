@@ -1,0 +1,27 @@
+*{font-family: "Microsoft YaHei";}
+#aqi-chart-wrap{height: 600px;display:flex;flex-direction:row;align-items:flex-end;justify-content:space-around;padding: 10px;overflow: hidden;}
+#aqi-chart-wrap div{animation: move_In 1s;position: relative;box-shadow:1px 1px 1px #ccc;width: 100px;box-sizing: border-box;cursor: pointer;margin: 1px;}
+.detail{position: absolute;display: none;text-align: center;z-index:10;}
+span{background-color: #eee;height: 40px;width: 140px;position: relative;top: -100px;font-size: 14px;}
+
+@mixin setItem{
+	@for $i from 0 through 90 {
+		
+		.chat_item#{$i}:hover{
+			 span{
+				display: block;
+			}
+		}
+	}	
+}
+
+@include setItem();
+
+@keyframes move_In {
+	0% {
+		bottom: -100%;
+	}
+	100% {
+		bottom: 0;
+	}
+}

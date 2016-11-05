@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,CAAC;EAAC,MAAM,EAAE,CAAC;EAAC,MAAM,EAAE,CAAC;;AAErB,eAAe;EAAC,OAAO,EAAC,IAAI;EAAC,cAAc,EAAC,GAAG",
+"sources": ["t17.scss"],
+"names": [],
+"file": "t17.css"
+}

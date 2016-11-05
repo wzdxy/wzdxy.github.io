@@ -1,0 +1,158 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<title>ZC的IFE任务六</title>
+	<style type="text/css">
+		*{padding: 0;margin: 0;font-family:'微软雅黑';}
+		body{width: 980px;height: 1386px;margin: auto;}		
+		header{height: 61px;border-bottom: 2px solid #928e8b;margin: 0 44px;}
+		header .sitetext{float: left;display: block;height: 20px;width: 104px;background-color: #d55d5c;color: #eee;line-height: 20px;font-size: 12px;padding-left: 8px;padding-top: 41px;}
+		header .datetext,footer p{float: right;font-size: 12px;color: #d55d5c;padding-top: 41px;line-height: 20px;}
+
+		.first,.wwh,.wrap{margin: 34px 44px;}
+		.first{height: 301px}
+		.bigpic{width: 641px;}
+		.right{float: right;width:203px;border-top: 2px solid #cc8091;position: relative;padding-top: 5px;}
+		.right .title{line-height: 28px;font-size: 17px;text-decoration: underline;}		
+		.right .title:first-letter{font-size: 24px;}
+		.right .subtitle{font-size: 12px;font-family: '楷体';color: #676767;}
+		.right .bignum{font-size: 116px;color: #75b86b;font-style: italic;text-decoration: underline;}
+		.right .smanum{font-size: 55px;color: #cc8091;display: inline-block;float: left; }
+		.biglett,.smalett{position: absolute;margin-left: 10px;width: 100px;left: 80px;word-wrap:break-word;}
+		.right .biglett{font-size: 21px;color: #cc8091;bottom: 24px;}
+		.right .smalett{font-size: 12px;color: #bdbbbc;bottom: 10px;}
+
+		.wwh {height: 215px;font-size: 12px;line-height: 16px;font-size: 12px;}
+		.wwh h2{font-size: 16px;font-weight: bolder;text-decoration: underline;margin-top: 7px;margin-bottom: 10px;}
+		.wwh p{margin-bottom: 8px;}
+		.what,.when,.how{display: inline-block;margin-right: 28px;vertical-align: top;}
+		.what{width: 228px;}
+		.what h2{color: #418c59;}
+		.what p{color: #767777;font-family: '宋体';}
+		.when{width: 204px;}
+		.when h2{color: #d2994f;}
+		.when p{color: #231815;opacity: 0.7;}
+		.how{width: 130px;}
+		.how h2{color: #cc7680;}
+		.how p{opacity: 0.7;}
+		.how strong{color: #cd4a48;font-style: italic;}
+
+		.wrap{height: 611px;}
+		.front{width: 415px;height: 611px;float: left;}
+		.front h1{font-size: 42px;color: #11456b;font-family: '黑体';margin-top: -14px;}
+		.front h2{font-size: 33px;color: #11456b;font-family: '黑体';font-weight: bolder;border-bottom: 2px solid #11456b;padding-bottom: 8px;margin-bottom: 24px;}
+		.front strong{font-size: 72px;color: #f5e327;font-family: '黑体';font-style: italic;font-weight: bolder;margin-right: 20px;}
+		.front img{float: right;margin: 10px 0 10px 4px;}
+		.front p{font-size: 12px;color: #767777;font-family: '宋体';}
+		.front .pfirst:first-letter{font-size: 70px;color: #f5e327;float: left;margin-right: 4px;font-family: '微软雅黑';line-height: 80px;}
+
+		.tech{width: 458px;height: 256px;background: url(images/screen.jpg);overflow: hidden;float: right;margin-bottom: 30px;}
+		.tech h1{display: inline-block;border-left: 3px solid #72b16a;height: 24px;padding: 10px;font-size: 26px;color: #fff;line-height: 24px;margin-left:38px;}
+		.tech h2{display: inline-block;font-size: 12px;color: #72b16a;font-style: italic;}
+		.tech .words{width: 458px;height: 61px;background-color: rgba(0,0,0,0.7);margin-top: 195px;padding-top: 8px;}
+
+		.some{width: 459px;height: 318px;background-color: #eeeed6;float: right;margin-bottom: 34px;}
+		.shang{height: 126px;font-family: '宋体';margin-top: 30px;}
+		.shang li{list-style: none;margin-bottom: 20px;}
+		.shang .dleft{float: left;text-indent: 24px;background: url(images/libg.png) no-repeat top 6px left 4px;font-size: 16px;margin-left: 20px;}
+		.shang .dright{float: right;font-size: 12px;margin-right: 20px;font-style: italic;}
+		.shang .dian{display: inline-block;width: auto;height: 20px;}
+
+		.zuo {background-color: #d55d5c;height: 160px;width: 260px;float: left;color: #fff;}
+		.zuo .hugenum{font-size: 110px;border-right: 2px solid #fff;line-height: 86px;width: 72px;height: 86px;margin: 40px 8px;float: left;}
+		.zuo .huglett{font-size: 21px;font-family: '黑体';font-style: italic;display: inline-block;width: 160px;float: right;line-height: 24px;margin-top: 40px;}
+		.zuo .minilett{font-size: 12px;font-family: '黑体';display: inline-block;width: 160px;float: right;}
+
+		.you{height: 160px;width: 179px;float: right;color: #5a5b5b;font-family: '黑体';margin: 10px;position: relative;}
+		.you p{text-indent: 36px;font-style: italic;font-size: 14px;}	
+		.you span{font-size: 72px;color: #d45d5c;line-height: 20px;font-family: '黑体';display: inline-block;width: 24px;}
+		.you .lyin{position: absolute;left: -40px;top: 16px;}
+		.you .ryin{position: relative;top: 10px;left: 124px;}
+
+		footer{height: 60px;border-top: 1px solid;clear: both;margin: 0 44px;}
+		footer p{padding-top: 0;}
+	</style>
+</head>
+<body>
+	<header>
+		<p class="sitetext">ife.baidu.com</p>
+		<p class="datetext">2016.03</P>
+	</header>
+	<div class="first">
+		<img class="bigpic" src="images/bigpic.jpg">
+		<div class="right">
+			<p class="title">ABOUT</p>
+			<p class="title">TECHNOLAGE</p>
+			<p class="subtitle">about technolage about technolage about technolage</p>
+			<p class="bignum">700</p>
+			<p class="smanum">3.2</p>
+			<p class="biglett">css</p>
+			<p class="smalett">csscsscssc</p>
+		</div>
+	</div>
+	<div class="wwh">
+		<article class="what">
+			<h2>What</h2>
+			<p>端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前</p>
+		</article>
+		<article class="when">
+			<h2>When</h2>
+			<p>端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前</p>
+		</article>
+		<article class="how">
+			<h2>How</h2>
+			<p>前端前端前端端</p>
+			<p>端前端前端端前端前端</p>
+			<p>端前端前端前端前</p>
+			</br>
+			<p>What------ <strong>40%</strong></p>
+			<p>What------ <strong>40%</strong></p>
+			<p>What------ <strong>40%</strong></p>			
+		</article>
+	</div>
+	<div class="wrap">
+		<article class="front">
+			<h1><strong>THE</strong>TECHNOLOGE OF FRONT</h1>
+			<h2>前段技术领域</h2>
+			<p class="pfirst">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端<img src="images/tech.jpg">前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+
+			<p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前前端前端前端前端前端前端前端端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+			<p>前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端前端</p>
+			
+		</article>
+		<div class="tech">
+			<div class="words">
+				<h1>前端技术</h1>
+				<h2>前端技术前端技术</h2>
+			</div>
+		</div>
+		<div class="some">
+			<div class="shang">
+				<ul>
+					<li><p class="dleft">前端前端前端前端前端前端 . . . . . . . . . . . . . . . . . . . </p><div class="dian"></div><p class="dright">前端</p></li>
+					<li><p class="dleft">前端前端前端 . . . . . . . . . . . . . . . . . . . . . . . . . . . . </p><div class="dian"></div><p class="dright">前端前</p></li>
+					<li><p class="dleft">前端前端前端前端前端前端前端前端 . . . . . . . . . . . . </p><div class="dian"></div><p class="dright">前端</p></li>
+				</ul>
+				
+				
+			</div>
+			<div class="zuo">
+				<p class="hugenum">0</p>
+				<p class="huglett">ONE TWO THREE FORE FIVE</p>
+				<p class="minilett">hello world hello world hello world</p>
+			</div>
+			<div class="you">
+				<span class="lyin">“</span>
+				<p>hello world hello world hello world hello world hello world hello world hello world hello world hello world hello world </p>
+				<span class="ryin">”</span>
+			</div>
+
+		</div>		
+	</div>
+		
+	</div>
+	<footer>
+		<p>ife.baidu.com</p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>排序可视化</title>
+	<style type="text/css">
+	*{font-family: 'Microsoft YaHei';margin: 0;padding: 0;}
+	html,body{width: 100%;height: 100%;overflow: hidden;}
+	.wrap{width: 90%;text-align: center;padding: 10px;}
+	.wrap input{height: 28px;margin-left: 4px;font-size: 14px;text-indent: 6px;width: 220px;}
+	.wrap button{height: 32px;margin-left: 4px;font-size: 14px;border: none;cursor: pointer;padding: 0 8px;}
+	.wrap button:hover{color: #fff;}
+	.wrap ul{width: 100%;height: 100%;}
+	.wrap li{display: inline-block;width: 14px;margin: 2px;vertical-align: bottom;background-color: #ccc;}
+	.wrap li span{position: relative;top:-20px;font-size: 10px;}
+	.nav {margin-top: 10;margin-bottom: 60px;}
+	.nav #pro{height: 100px;width: 100%;position: fixed;display: none;padding-top: 50px;color: #f44;}
+
+}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div class="nav">
+			<div id="pro">排序中，请稍候... ...</div>
+			<input type="text" id="numinput" placeholder="在此输入10~100间的数字" >
+			<button id="l_inbtn" style="background-color:#9acd32">左边进</button>
+			<button id="r_inbtn" style="background-color:#9acd32">右边进</button>
+			<button id="l_outbtn" style="background-color:#fb3">左边出</button>
+			<button id="r_outbtn" style="background-color:#fb3">右边出</button>
+			<button id="clear_btn" style="background-color:#f44">清空</button>
+			<button id="random_btn" style="background-color:#9f66d9">随机产生一组数</button>
+			<button id="sort_btn" style="background-color:#33b5e5">排序</button>
+		</div>
+		
+
+		<ul id="list">
+			<li>6</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="js/t19.js"></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<title>ZC的IFE任务五</title>
+	<style type="text/css">
+		* {padding: 0;margin: 0;font-family: '黑体'}
+		body{width: 90%;margin-left: 5%;}
+		h1{margin-bottom: 20px;}
+		h2{color: #888;margin-bottom: 16px;}
+		p{line-height: 28px;text-indent: 2em;}		
+		.info{color: #888;font-size: 12px;margin-bottom: 18px;display: block;}
+
+		.header{background-color: #333;height: 60px;}
+		.header img{padding: 8px 0 8px 40px;}
+		.header ul{float: right;margin: 14px 16px 20px 0 ;line-height: 26px;font-size: 14px;}
+		.header li{float: left;margin-left: 20px;color: #000;height: 26px;}
+		.header a{color: #fff;text-decoration: none;}
+		.header a:hover{color: #888;cursor: pointer;}
+
+		.wrap{background-color: #dedede;padding: 20px;padding-bottom: 0;border: 1px solid #dedede;}
+
+		.article,.form_box{background-color: #fff;border: outset;padding: 20px;margin-bottom: 20px;}
+		.form_box{width: 360px;}
+		.article{margin-right: 426px;}
+		.article ul{list-style: none;margin-left: 20px;}
+		.article ol{margin-left: 40px;margin-bottom: 20px;}
+		.article .imginset{margin: 10px 0;width: 30%;}
+
+		.pic_ul li{display: inline-block;}
+		.pic_box{display: inline-block;padding: 10px;border: 1px solid #ccc;margin-bottom:15px;margin-left: 40px;}	
+		.pic_box strong{display: block;margin: 0 auto;text-align: center;font-size: 12px;font-weight: normal;margin-bottom: 8px;}
+
+		.side{background: url(images/sidebg.png) no-repeat;padding-left: 10px;line-height: 38px;display: block;}
+		.onetable{width: 100%;font-size: 14px;text-indent: 4px;border-collapse: collapse;}
+		.onetable th{background-color: #333;text-align: left;color: #fff;}
+		.onetable,.onetable th,.onetable td{border: 1px solid #ccc;}
+		.onetable tr{height: 26px;}		
+		.onetable .bottomrow{background-color: #ccc;font-weight: bolder;}
+
+		.form_box{float: right;}
+
+		.submit table{width: 100%;}
+		.submit tr,label{font-size: 14px;height: 32px;line-height: 32px;vertical-align: top;}
+		.submit label{display: inline-block;margin-left: -8px;}
+		.submit th{text-align: right;font-weight: normal;}
+		.submit td{text-indent: 16px;}		
+		.submit textarea{height: 100px;width: 90%;margin-top: 8px;}
+		.submit .btn{width: 100%;height: 36px;border-radius: 10px;border: transparent;background-color: #3355d0;color: #fff;}
+		.submit .textinput{height: 20px;text-indent: 2px;}
+		.submit .note{color: #666;vertical-align: top;line-height: 20px;}
+		.submit .select{display: inline-block;margin-top: 9px;}
+
+		.footer{background-color: #000;}
+		.footer p{margin: 0 auto;line-height: 70px;color: #fff;text-align: center;}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<img src="images/logo.png">
+		<ul>
+			<li><a href="#">导航链接一</a></li>
+			<li><a href="#">导航链接二</a></li>
+			<li><a href="#">导航链接三</a></li>
+			<li><a href="#">导航链接四</a></li>
+			
+		</ul>
+	</div>
+	<div class="wrap">
+		<div class="form_box">
+			<strong class="side">这以后是一个侧边栏</strong>
+			<form name="form1" id="form1" class="submit">
+				<table>
+					<tr>
+						<th>请输入邮箱地址</th>
+						<td><input type="text" value="这是一个文本输入框" name="email" class="textinput"></td>
+					</tr>
+					<tr>
+						<th></th>
+						<td class="note">邮箱地址请按要求输入</td>
+					</tr>
+					<tr>
+						<th>请输入密码</th>
+						<td><input type="password" value="" name="pw1" class="textinput"></td>
+					</tr>
+					<tr>
+						<th>请重复输入密码</th>
+						<td><input type="password" value="" name="pw2" class="textinput"></td>
+					</tr>
+					<tr>
+						<th></th>
+						<td class="note">密码请为6-16位英文数字</td>
+					</tr>
+					<tr>
+						<th>性别</th>
+						<td>
+							<input type="radio" name="sex" id="man" class="select" checked="checked"><label for="man" >男</label>
+							<input type="radio" name="sex" id="woman" class="select"><label for="woman">女</label>
+						</td>
+					</tr>
+					<tr>
+						<th>城市</th>
+						<td>
+							<select name="city">
+								<option>北京</option>								
+								<option>杭州</option>
+								<option>烟台</option>								
+						</td>
+					</tr>
+					<tr>
+						<th>爱好</th>
+						<td>
+							
+							<input type="checkbox" name="sport" id="sport" class="select"><label for="sport">运动</label>
+							<input type="checkbox" name="art" id="art" class="select"><label for="art">艺术</label>
+							<input type="checkbox" name="senc" id="senc" class="select"><label for="senc">科学</label>
+						</td>
+					</tr>
+					<tr>
+						<th>个人描述</th>
+						<td>
+							<textarea name="intro"  >这是一个多行输入框，请输入您的个人描述</textarea>
+						</td>
+					</tr>
+
+				</table>
+				<input type="button" class="btn" value="确认提交">
+			</form>
+		</div>
+		<div class="article">
+			<h1>文章一级标题</h1>
+			<h2>文章二级标题</h2>
+			<span class="info">文章作者 文章发表时间</span>
+			<p>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落</br>这是一个很长很长的段落<a href="baidu.com">这里有一个链接到http://baidu.com</a>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很<strong>这里有个粗体字</strong>长很长的段落这是一个很长很长的段落这是一个很长很长的段这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落</p>
+			<img class="imginset" src="images/1.png">
+			<p>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落</br>这是一个很长很长的段落<a href="baidu.com" target="_blank">这里有一个链接点击后打开新窗口链接到http://baidu.com</a>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落</p>
+
+		</div>
+		<div class="article">
+			<h1>另一篇文章一级标题</h1>
+			<h2>文章二级标题</h2>
+			<span class="info">文章作者 文章发表时间</span>
+			<p>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落</br>这是一个很长很长的段落<a href="baidu.com">这里有一个链接到http://baidu.com</a>这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落这是一个很长很长的段落</p>
+			<img class="imginset" src="images/1.png">
+			<ul>
+				<li>列表项目一</li>
+				<li>列表项目二</li>
+				<li>列表项目三</li>
+			</ul>
+		</div>
+		<div class="article">
+			<h1>图片</h1>
+			<ul class="pic_ul">
+				<li>
+					<div class="pic_box">
+						<strong>好看的图片</strong>
+						<img src="images/1.png">
+					</div>	
+
+				</li>
+				<li>
+					<div class="pic_box">
+						<strong>好看的图片</strong>
+						<img src="images/1.png">
+					</div>	
+
+				</li>
+				<li>
+					<div class="pic_box">
+						<strong>好看的图片</strong>
+						<img src="images/1.png">
+					</div>	
+
+				</li>
+				<li>
+					<div class="pic_box">
+						<strong>好看的图片</strong>
+						<img src="images/1.png">
+					</div>	
+
+				</li>
+				<li>
+					<div class="pic_box">
+						<strong>好看的图片</strong>
+						<img src="images/1.png">
+					</div>	
+
+				</li>
+				<li>
+					<div class="pic_box">
+						<strong>好看的图片</strong>
+						<img src="images/1.png">
+					</div>	
+
+				</li>
+				<li>
+					<div class="pic_box">
+						<strong>好看的图片</strong>
+						<img src="images/1.png">
+					</div>	
+
+				</li>
+				<li>
+					<div class="pic_box">
+						<strong>好看的图片</strong>
+						<img src="images/1.png">
+					</div>	
+
+				</li>
+				<li>
+					<div class="pic_box">
+						<strong>好看的图片</strong>
+						<img src="images/1.png">
+					</div>	
+
+				</li>
+				<li>
+					<div class="pic_box">
+						<strong>好看的图片</strong>
+						<img src="images/1.png">
+					</div>	
+
+				</li>
+			</ul>	
+		</div>
+		<div class="article">
+			<h1>最后一篇文章一级标题</h1>
+			<h2>文章二级标题</h2>
+			<span class="info">文章作者 文章发表时间</span>
+			<ol>
+				<li>排名1</li>
+				<li>排名2</li>
+				<li>排名3</li>
+			</ol>
+			<strong>下面是一个表格</strong>
+			<table class="onetable">
+				<tr>
+					<th>表头</th>
+					<th>表头</th>
+					<th>表头</th>
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="#">操作</a></td>					
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="#">操作</a></td>					
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="#">操作</a></td>					
+				</tr>
+				<tr>
+					<td>表内容单元格</td>
+					<td>表内容单元格</td>
+					<td><a href="#">操作</a></td>					
+				</tr>
+				<tr class="bottomrow">
+					<td>总计</td>
+					<td>1000</td>
+					<td></td>					
+				</tr>				
+			</table>
+		</div>
+		
+	</div>
+	<div class="footer">
+		<p>版权所有*</p>
+	</div>
+</body>

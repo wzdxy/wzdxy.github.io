@@ -1,0 +1,19 @@
+#nav {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  padding: 10px; }
+
+#nav li {
+  display: inline-block; }
+
+#nav a {
+  color: #444;
+  padding: 10px;
+  font-size: 18px;
+  text-decoration: none; }
+  #nav a:hover, #nav a.active {
+    background-color: #555;
+    color: #fff; }
+
+/*# sourceMappingURL=f_nav.css.map */

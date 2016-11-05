@@ -1,0 +1,315 @@
+* {
+  font-family: "Microsoft YaHei"; }
+
+#aqi-chart-wrap {
+  height: 600px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 10px;
+  overflow: hidden; }
+
+#aqi-chart-wrap div {
+  animation: move_In 1s;
+  position: relative;
+  box-shadow: 1px 1px 1px #ccc;
+  width: 100px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 1px; }
+
+.detail {
+  position: absolute;
+  display: none;
+  text-align: center;
+  z-index: 10; }
+
+span {
+  background-color: #eee;
+  height: 40px;
+  width: 140px;
+  position: relative;
+  top: -100px;
+  font-size: 14px; }
+
+.chat_item0:hover span {
+  display: block; }
+
+.chat_item1:hover span {
+  display: block; }
+
+.chat_item2:hover span {
+  display: block; }
+
+.chat_item3:hover span {
+  display: block; }
+
+.chat_item4:hover span {
+  display: block; }
+
+.chat_item5:hover span {
+  display: block; }
+
+.chat_item6:hover span {
+  display: block; }
+
+.chat_item7:hover span {
+  display: block; }
+
+.chat_item8:hover span {
+  display: block; }
+
+.chat_item9:hover span {
+  display: block; }
+
+.chat_item10:hover span {
+  display: block; }
+
+.chat_item11:hover span {
+  display: block; }
+
+.chat_item12:hover span {
+  display: block; }
+
+.chat_item13:hover span {
+  display: block; }
+
+.chat_item14:hover span {
+  display: block; }
+
+.chat_item15:hover span {
+  display: block; }
+
+.chat_item16:hover span {
+  display: block; }
+
+.chat_item17:hover span {
+  display: block; }
+
+.chat_item18:hover span {
+  display: block; }
+
+.chat_item19:hover span {
+  display: block; }
+
+.chat_item20:hover span {
+  display: block; }
+
+.chat_item21:hover span {
+  display: block; }
+
+.chat_item22:hover span {
+  display: block; }
+
+.chat_item23:hover span {
+  display: block; }
+
+.chat_item24:hover span {
+  display: block; }
+
+.chat_item25:hover span {
+  display: block; }
+
+.chat_item26:hover span {
+  display: block; }
+
+.chat_item27:hover span {
+  display: block; }
+
+.chat_item28:hover span {
+  display: block; }
+
+.chat_item29:hover span {
+  display: block; }
+
+.chat_item30:hover span {
+  display: block; }
+
+.chat_item31:hover span {
+  display: block; }
+
+.chat_item32:hover span {
+  display: block; }
+
+.chat_item33:hover span {
+  display: block; }
+
+.chat_item34:hover span {
+  display: block; }
+
+.chat_item35:hover span {
+  display: block; }
+
+.chat_item36:hover span {
+  display: block; }
+
+.chat_item37:hover span {
+  display: block; }
+
+.chat_item38:hover span {
+  display: block; }
+
+.chat_item39:hover span {
+  display: block; }
+
+.chat_item40:hover span {
+  display: block; }
+
+.chat_item41:hover span {
+  display: block; }
+
+.chat_item42:hover span {
+  display: block; }
+
+.chat_item43:hover span {
+  display: block; }
+
+.chat_item44:hover span {
+  display: block; }
+
+.chat_item45:hover span {
+  display: block; }
+
+.chat_item46:hover span {
+  display: block; }
+
+.chat_item47:hover span {
+  display: block; }
+
+.chat_item48:hover span {
+  display: block; }
+
+.chat_item49:hover span {
+  display: block; }
+
+.chat_item50:hover span {
+  display: block; }
+
+.chat_item51:hover span {
+  display: block; }
+
+.chat_item52:hover span {
+  display: block; }
+
+.chat_item53:hover span {
+  display: block; }
+
+.chat_item54:hover span {
+  display: block; }
+
+.chat_item55:hover span {
+  display: block; }
+
+.chat_item56:hover span {
+  display: block; }
+
+.chat_item57:hover span {
+  display: block; }
+
+.chat_item58:hover span {
+  display: block; }
+
+.chat_item59:hover span {
+  display: block; }
+
+.chat_item60:hover span {
+  display: block; }
+
+.chat_item61:hover span {
+  display: block; }
+
+.chat_item62:hover span {
+  display: block; }
+
+.chat_item63:hover span {
+  display: block; }
+
+.chat_item64:hover span {
+  display: block; }
+
+.chat_item65:hover span {
+  display: block; }
+
+.chat_item66:hover span {
+  display: block; }
+
+.chat_item67:hover span {
+  display: block; }
+
+.chat_item68:hover span {
+  display: block; }
+
+.chat_item69:hover span {
+  display: block; }
+
+.chat_item70:hover span {
+  display: block; }
+
+.chat_item71:hover span {
+  display: block; }
+
+.chat_item72:hover span {
+  display: block; }
+
+.chat_item73:hover span {
+  display: block; }
+
+.chat_item74:hover span {
+  display: block; }
+
+.chat_item75:hover span {
+  display: block; }
+
+.chat_item76:hover span {
+  display: block; }
+
+.chat_item77:hover span {
+  display: block; }
+
+.chat_item78:hover span {
+  display: block; }
+
+.chat_item79:hover span {
+  display: block; }
+
+.chat_item80:hover span {
+  display: block; }
+
+.chat_item81:hover span {
+  display: block; }
+
+.chat_item82:hover span {
+  display: block; }
+
+.chat_item83:hover span {
+  display: block; }
+
+.chat_item84:hover span {
+  display: block; }
+
+.chat_item85:hover span {
+  display: block; }
+
+.chat_item86:hover span {
+  display: block; }
+
+.chat_item87:hover span {
+  display: block; }
+
+.chat_item88:hover span {
+  display: block; }
+
+.chat_item89:hover span {
+  display: block; }
+
+.chat_item90:hover span {
+  display: block; }
+
+@keyframes move_In {
+  0% {
+    bottom: -100%; }
+  100% {
+    bottom: 0; } }
+
+/*# sourceMappingURL=t17.css.map */

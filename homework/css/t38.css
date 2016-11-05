@@ -1,0 +1,10 @@
+*{padding: 0;margin: 0;}
+
+h4{padding:5% 15%;}
+.sortchart{border: 1px solid #000;border-collapse: collapse;text-align: center;margin-left: 15%;margin-top: 4%;}
+.sortchart tr{height: 30px;}
+.sortchart tr:hover td{background-color: #ffe;}
+.sortchart th{border: 1px solid #000;width: 100px;background:no-repeat 82px 9px #607d8b;cursor: pointer;}
+.sortchart .sortup{background-image: url(../images/sort-up.png);}
+.sortchart .sortdown{background-image: url(../images/sort-down.png);}
+.sortchart td{border: 1px solid #000;height: 30px;background-color: #d3d3d3;}

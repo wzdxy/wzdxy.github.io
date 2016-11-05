@@ -1,0 +1,12 @@
+*{padding: 0;margin: 0;}
+body{width: 100%;height: 100%;}
+#flybtn1{margin: 0 auto;height: 40px;width: 80px;margin-left: 45%;margin-top: 100px;    }
+.flyout{width: 100%;height: 100%;position: fixed;background-color: rgba(120,120,210,0.3);display: none;}
+.flyoutwrap{width: 500px;background-color: #eee;padding-bottom: 10px;text-align: center;margin: 0 auto;position: relative;top: -50%;margin-top: 50%;border: 1px solid #000;}
+.flyoutwrap h4{background-color: #aaa;color: #fff;line-height: 40px;border-bottom: 1px solid #000;}
+.flyoutwrap p{min-height: 120px;word-wrap: break-word;margin: 10px;text-align: left;}
+.flyoutwrap .btngroup{position: absolute;right: 16px;bottom: 16px;}
+.flyoutwrap button{height: 30px;width: 80px;border: 1px solid #000;}
+.flyoutwrap .yesbtn{background-color: #999;color: #fff;}
+.flyoutwrap .nobtn{background-color: #fff;}
+.bigbig{font-size: 40px;line-height: 120px;text-align: center;}

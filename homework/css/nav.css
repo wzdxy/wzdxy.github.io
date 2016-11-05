@@ -1,0 +1,8 @@
+/*导航*/
+body{display: flex;}
+#nav {display: inline;position: fixed;left: 0;right: 0;background-color: #1898fd;height: 88px;overflow: visible;padding-left: 4%;}
+#nav ul{display: flex;justify-content:flex-start;}
+#nav li{list-style: none;text-align: center;font-size: 20px;line-height:20px;}
+#nav a{display: block; text-decoration: none; background-color: #1898fd;padding:34px 32px;color: #fff;}
+#nav a:hover{text-decoration: none;background-color: #444;}
+#nav li .active{background-color:#333;}

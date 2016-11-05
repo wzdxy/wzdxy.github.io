@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>模拟队列</title>
+	<style type="text/css">
+	
+	.wrap{width: 90%;text-align: center;padding: 40px;}
+	.wrap input,.wrap button{height: 40px;margin-left: 4px;font-size: 18px;}
+	.wrap ul{}
+	.wrap li{display: inline-block;width: 80px;height: 30px;border: 1px solid;margin: 5px;line-height: 30px;}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<input type="text" id="numinput" placeholder="在此输入数字" >
+		<button id="l_inbtn">左边进</button>
+		<button id="r_inbtn">右边进</button>
+		<button id="l_outbtn">左边出</button>
+		<button id="r_outbtn">右边出</button>
+		<ul id="list">
+		<li>1</li>
+		<li>2</li>
+		<li>3</li>
+	</ul>
+	</div>
+	<script type="text/javascript">
+	window.onload=function(){
+		onClick();
+	}
+	//获取原始数组
+	var getNumList=function(){
+		var arr=new Array();
+		var aList=document.getElementById('list');
+		var nLi=aList.getElementsByTagName('li');
+		for (var i = 0; i < nLi.length; i++) {
+			arr[i]=nLi[i].innerHTML;
+		};
+		return arr;
+	}
+
+	// 验证输入合法性
+	var checkNum=function(numToIn){
+		var re=/^\d+(.\d+)*$/;
+		if (!numToIn||!(re.test(numToIn))) {
+			alert("请输入一个数字");
+			return false;
+		}else return true;
+	}
+
+	// 注册点击事件 调用函数
+	var onClick=function(){
+		var li_btn=document.getElementById('l_inbtn');
+		var ri_btn=document.getElementById('r_inbtn');
+		var lo_btn=document.getElementById('l_outbtn');
+		var ro_btn=document.getElementById('r_outbtn');		
+		
+		li_btn.onclick=function(){
+			leftIn();
+			
+		}
+		ri_btn.onclick=function(){
+			rightIn();
+		}
+		//ri_btn.onclick=rightIn();
+		lo_btn.onclick=function(){
+			leftOut();
+
+		}
+		ro_btn.onclick=function(){
+			rightOut();
+		}
+
+	}
+
+	//渲染
+	function inner(arr){
+		var ul=document.getElementById('list');
+		var inner='';
+		for (var i = 0; i < arr.length; i++) {
+			inner+="<li>"+arr[i]+"</li>";
+		};
+		ul.innerHTML=inner;
+	}
+
+	//在数组左边添加
+	function leftIn(){
+		var textBox=document.getElementById('numinput');
+		numToIn=textBox.value;
+		var arr=getNumList();
+		if (arr.length>15) {
+			alert("到达上限");
+			return 0;
+		};
+		if (checkNum(numToIn)) {
+			arr.splice(0,0,numToIn);
+			inner(arr);
+			textBox.value="";
+		};
+		
+	}
+	function rightIn(){
+		var textBox=document.getElementById('numinput');
+		numToIn=textBox.value;
+		var arr=getNumList();
+		if (arr.length>15) {
+			alert("到达上限");
+			return 0;
+		};
+		if (checkNum(numToIn)) {
+			arr.push(numToIn);
+			inner(arr);
+			textBox.value="";
+		};
+	}
+
+	//删除数组第一个数
+	function leftOut(){
+		var arr=getNumList();
+		if (arr.length==0) {
+			alert("队列已经为空，不能删除");
+			return 0;
+		};
+		var outNum=arr.shift();
+		alert(outNum);
+		inner(arr);
+	}
+
+	//删除数组最后一个数
+	function rightOut(){
+		var arr=getNumList();
+		if (arr.length==0) {
+			alert("队列已经为空，不能删除");
+			return 0;
+		};
+		var outNum=arr.pop();
+		alert(outNum);
+		inner(arr);
+	}
+	</script>
+</body>
+</html>
