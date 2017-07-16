@@ -8,7 +8,7 @@
 	path = lednumeric
 	url = https://github.com/wzdxy/LED-numeric-display.git
 [submodule "jquery.editableTreegrid"]
-	path = editableTreegrid
+	path = jquery.editableTreegrid
 	url = https://github.com/wzdxy/jquery.editableTreegrid.git
 [submodule "vue-components"]
 	path = vue-components
