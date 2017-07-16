@@ -11,3 +11,6 @@
 [submodule "jquery.editableTreegrid"]
 	path = jquery.editableTreegrid
 	url = https://github.com/wzdxy/jquery.editableTreegrid.git
+[submodule "vue-components"]
+	path = vue-components
+	url = https://github.com/wzdxy/vue-components.git
